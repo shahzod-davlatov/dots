@@ -14,6 +14,8 @@ Arch Linux setup in [catppuccin mocha](https://catppuccin.com/palette/) theme
 
 ![rofi](./screenshots/rofi.png)
 
+![swaylock](./screenshots/swaylock.png)
+
 ![sddm](./screenshots/sddm.png)
 
 ## Themes
