@@ -49,6 +49,16 @@ wget -P ~/.local/share/fonts https://github.com/ryanoasis/nerd-fonts/releases/do
 
 ```
 
+## Neovim setup
+
+```bash
+sudo pacman -S --noconfirm --needed gcc make git ripgrep fd unzip neovim
+```
+
+```bash
+git clone https://github.com/shahzod-davlatov/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+```
+
 ## Software
 
 - ags-hyprpanel-git
