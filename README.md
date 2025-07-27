@@ -115,6 +115,7 @@ git clone https://github.com/shahzod-davlatov/kickstart.nvim.git "${XDG_CONFIG_H
 - sof-firmware
 - steam
 - swaylock-effects
+- swappy
 - telegram-desktop
 - terminus-font
 - thunderbird
@@ -125,7 +126,7 @@ git clone https://github.com/shahzod-davlatov/kickstart.nvim.git "${XDG_CONFIG_H
 - vim
 - visual-studio-code-bin
 - wget
-- wl-screenrec
+- wf-recorder
 - xdg-desktop-portal-gtk
 - xdg-desktop-portal-hyprland
 - yandex-music

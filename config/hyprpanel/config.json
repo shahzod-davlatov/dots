@@ -407,6 +407,7 @@
         "clock"
       ],
       "right": [
+        "hypridle",
         "systray",
         "network",
         "bluetooth",
@@ -420,11 +421,11 @@
   "bar.customModules.cava.showActiveOnly": true,
   "bar.customModules.cava.icon": "󰎄",
   "theme.bar.buttons.modules.cava.enableBorder": false,
-  "bar.customModules.kbLayout.leftClick": "notify-send \"Current layout\" \"$(echo $(hyprctl devices -j) | jq .keyboards'[-1]'.active_keymap | sed 's:^.\\(.*\\).$:\\1:')\"",
+  "bar.customModules.kbLayout.leftClick": "",
   "bar.customModules.worldclock.format": "%I:%M:%S",
   "theme.bar.buttons.modules.worldclock.enableBorder": false,
   "bar.customModules.kbLayout.labelType": "code",
-  "bar.customModules.kbLayout.label": false,
+  "bar.customModules.kbLayout.label": true,
   "theme.bar.buttons.modules.kbLayout.spacing": "0.45em",
   "bar.launcher.autoDetectIcon": false,
   "bar.network.label": false,
@@ -456,9 +457,9 @@
   "menus.dashboard.shortcuts.left.shortcut4.icon": "󰎚",
   "menus.dashboard.shortcuts.left.shortcut4.tooltip": "Obsidian",
   "menus.dashboard.shortcuts.right.shortcut1.tooltip": "Areashot",
-  "menus.dashboard.shortcuts.right.shortcut1.command": "slurp | grim -g - - | wl-copy",
+  "menus.dashboard.shortcuts.right.shortcut1.command": "/home/shahzod/.config/hypr/scripts/ximpershot.sh -m region --swappy",
   "menus.dashboard.shortcuts.right.shortcut1.icon": "󱣴",
-  "menus.dashboard.shortcuts.right.shortcut3.command": "grim - | wl-copy",
+  "menus.dashboard.shortcuts.right.shortcut3.command": "/home/shahzod/.config/hypr/scripts/ximpershot.sh -m output --swappy",
   "menus.dashboard.shortcuts.right.shortcut4.command": "wl-screenrec -g \"$(slurp)\" -f /home/shahzod/Records/screenrecord_$(date +\"%Y-%m-%d_%H:%M:%S.mp4\")",
   "menus.dashboard.powermenu.avatar.image": "/home/shahzod/Pictures/wallpaperflare-cropped.jpg",
   "bar.autoHide": "never",
@@ -495,8 +496,14 @@
   "theme.bar.enableShadow": false,
   "bar.workspaces.showAllActive": false,
   "bar.workspaces.workspaceIconMap": {},
-  "bar.battery.label": true,
+  "bar.battery.label": false,
   "bar.bluetooth.rightClick": "kitty -e bluetuith",
   "bar.volume.rightClick": "pwvucontrol",
-  "bar.customModules.cava.stereo": false
+  "bar.customModules.cava.stereo": false,
+  "bar.customModules.storage.paths": [
+    "/"
+  ],
+  "bar.workspaces.applicationIconOncePerWorkspace": true,
+  "theme.bar.buttons.clock.enableBorder": false,
+  "menus.dashboard.recording.path": "$HOME/Records"
 }
